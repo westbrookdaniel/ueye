@@ -1,0 +1,149 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-annotation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.image-annotation-container img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.image-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #ccc;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.box-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 0, 0, 1);
+  padding: 2px;
+  user-select: none;
+}
+
+.box-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.annotation-form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.current-annotation {
+  margin-top: 80px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input[type='text'] {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.small-button {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.annotation-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.annotation-details p {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+button:active {
+  background-color: #005cbf;
+}
