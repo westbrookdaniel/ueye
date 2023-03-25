@@ -1,0 +1,191 @@
+[
+  {
+    "fileName": "Screenshot 2023-03-25 at 6.06.50 pm.png",
+    "width": 800,
+    "height": 600,
+    "annotations": [
+      {
+        "class": "header",
+        "xMin": 0,
+        "yMin": 0,
+        "xMax": 797,
+        "yMax": 63
+      },
+      {
+        "class": "image",
+        "xMin": 7,
+        "yMin": 7,
+        "xMax": 54,
+        "yMax": 58
+      },
+      {
+        "class": "button",
+        "xMin": 728,
+        "yMin": 10,
+        "xMax": 793,
+        "yMax": 44
+      },
+      {
+        "class": "button",
+        "xMin": 364,
+        "yMin": 150,
+        "xMax": 429,
+        "yMax": 173
+      },
+      {
+        "class": "text",
+        "xMin": 213,
+        "yMin": 85,
+        "xMax": 587,
+        "yMax": 143
+      },
+      {
+        "class": "section",
+        "xMin": -2,
+        "yMin": 0,
+        "xMax": 799,
+        "yMax": 264
+      },
+      {
+        "class": "text",
+        "xMin": 337,
+        "yMin": 278,
+        "xMax": 461,
+        "yMax": 298
+      },
+      {
+        "class": "text",
+        "xMin": 310,
+        "yMin": 384,
+        "xMax": 489,
+        "yMax": 409
+      },
+      {
+        "class": "image",
+        "xMin": 226,
+        "yMin": 313,
+        "xMax": 258,
+        "yMax": 347
+      },
+      {
+        "class": "image",
+        "xMin": 279,
+        "yMin": 320,
+        "xMax": 331,
+        "yMax": 341
+      },
+      {
+        "class": "image",
+        "xMin": 346,
+        "yMin": 311,
+        "xMax": 389,
+        "yMax": 352
+      },
+      {
+        "class": "image",
+        "xMin": 410,
+        "yMin": 319,
+        "xMax": 446,
+        "yMax": 344
+      },
+      {
+        "class": "image",
+        "xMin": 465,
+        "yMin": 319,
+        "xMax": 516,
+        "yMax": 345
+      },
+      {
+        "class": "image",
+        "xMin": 530,
+        "yMin": 321,
+        "xMax": 575,
+        "yMax": 341
+      },
+      {
+        "class": "section",
+        "xMin": -1,
+        "yMin": 267,
+        "xMax": 803,
+        "yMax": 366
+      },
+      {
+        "class": "section",
+        "xMin": -1,
+        "yMin": 367,
+        "xMax": 798,
+        "yMax": 450
+      },
+      {
+        "class": "image",
+        "xMin": 431,
+        "yMin": 428,
+        "xMax": 603,
+        "yMax": 451
+      },
+      {
+        "class": "image",
+        "xMin": 198,
+        "yMin": 428,
+        "xMax": 307,
+        "yMax": 450
+      },
+      {
+        "class": "section",
+        "xMin": 209,
+        "yMin": 303,
+        "xMax": 594,
+        "yMax": 357
+      },
+      {
+        "class": "section",
+        "xMin": 177,
+        "yMin": 419,
+        "xMax": 624,
+        "yMax": 450
+      },
+      {
+        "class": "section",
+        "xMin": 197,
+        "yMin": 77,
+        "xMax": 606,
+        "yMax": 179
+      },
+      {
+        "class": "text",
+        "xMin": 121,
+        "yMin": 23,
+        "xMax": 175,
+        "yMax": 31
+      },
+      {
+        "class": "text",
+        "xMin": 185,
+        "yMin": 24,
+        "xMax": 220,
+        "yMax": 31
+      },
+      {
+        "class": "text",
+        "xMin": 229,
+        "yMin": 25,
+        "xMax": 248,
+        "yMax": 30
+      },
+      {
+        "class": "text",
+        "xMin": 257,
+        "yMin": 23,
+        "xMax": 292,
+        "yMax": 31
+      },
+      {
+        "class": "section",
+        "xMin": 115,
+        "yMin": 19,
+        "xMax": 304,
+        "yMax": 36
+      }
+    ]
+  }
+]

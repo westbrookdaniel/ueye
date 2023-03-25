@@ -63,13 +63,13 @@ p {
   background-color: rgba(255, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .box-label {
   font-size: 12px;
   font-weight: bold;
   color: white;
-  background-color: rgba(255, 0, 0, 1);
   padding: 2px;
   user-select: none;
 }
@@ -146,4 +146,26 @@ button:hover {
 
 button:active {
   background-color: #005cbf;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.file-upload.dragging {
+  border-color: #2196f3;
+}
+
+.file-upload p {
+  margin: 0;
+}
+
+.file-upload input {
+  margin-top: 10px;
 }
