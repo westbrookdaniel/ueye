@@ -1,4 +1,5 @@
-:warning: **Work in progress**: This project is currently a work in progress and is not yet ready for use :warning:
+> **Warning**
+> This project is currently a work in progress and is not yet ready for use
 
 # UEye
 
