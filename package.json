@@ -14,6 +14,7 @@
     "pkg:macos": "pkg dist/index.js --targets node16-macos-x64 --output ueye-macos"
   },
   "dependencies": {
+    "@tensorflow/tfjs-node-gpu": "^4.2.0",
     "commander": "^9.2.0",
     "jimp": "^0.16.1"
   },

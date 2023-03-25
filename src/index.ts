@@ -4,25 +4,26 @@ import Jimp from 'jimp'
 import { Command } from 'commander'
 
 async function processImageData(
-  imageData: Jimp,
+  imagePath: string,
   componentMap: any
 ): Promise<string> {
+  // Load the image data using Jimp
+  const imageData = await Jimp.read(imagePath)
+  const buffer = await imageData.getBufferAsync(Jimp.MIME_PNG)
+
   // Add your implementation code here
   // This function should preprocess the image, run it through the machine learning model,
   // identify the component boxes and types, and generate React code based on the hierarchy
-  return JSON.stringify(imageData) + JSON.stringify(componentMap)
+  return JSON.stringify(buffer) + JSON.stringify(componentMap)
 }
 
 async function generateReactCode(imagePath: string, componentMapPath: string) {
   try {
-    // Load the image data using Jimp
-    const imageData = await Jimp.read(imagePath)
-
     // Load the component map from the specified file path
     const componentMap = require(path.resolve(componentMapPath)).default
 
     // Process the image data and generate React code
-    const reactCode = await processImageData(imageData, componentMap)
+    const reactCode = await processImageData(imagePath, componentMap)
 
     // Print the generated React code to the console
     console.log(reactCode)
