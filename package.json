@@ -1,0 +1,27 @@
+{
+  "name": "ueye-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate React code from website images.",
+  "main": "dist/index.js",
+  "bin": {
+    "ueye": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --esModuleInterop --outDir dist",
+    "watch:build": "nodemon --watch src --exec 'npm run build'",
+    "start": "ts-node src/index.ts",
+    "watch:start": "nodemon --watch src --exec 'npm run start'",
+    "pkg:macos": "pkg dist/index.js --targets node16-macos-x64 --output ueye-macos"
+  },
+  "dependencies": {
+    "commander": "^9.2.0",
+    "jimp": "^0.16.1"
+  },
+  "devDependencies": {
+    "@types/jimp": "^0.2.28",
+    "nodemon": "^2.0.14",
+    "pkg": "^5.5.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
