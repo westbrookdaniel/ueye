@@ -1,21 +1,7 @@
 import fs from 'fs'
 import path from 'path'
-import Jimp from 'jimp'
 import { Command } from 'commander'
-
-async function processImageData(
-  imagePath: string,
-  componentMap: any
-): Promise<string> {
-  // Load the image data using Jimp
-  const imageData = await Jimp.read(imagePath)
-  const buffer = await imageData.getBufferAsync(Jimp.MIME_PNG)
-
-  // Add your implementation code here
-  // This function should preprocess the image, run it through the machine learning model,
-  // identify the component boxes and types, and generate React code based on the hierarchy
-  return JSON.stringify(buffer) + JSON.stringify(componentMap)
-}
+import { processImageData } from './proccessImageData'
 
 async function generateReactCode(imagePath: string, componentMapPath: string) {
   try {

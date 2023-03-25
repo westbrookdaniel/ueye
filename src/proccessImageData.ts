@@ -47,7 +47,8 @@ export async function processImageData(
   const bitmap = resizedImage.bitmap
 
   // Convert image to tensor and normalize pixel values
-  const imageTensor = tf.browser.fromPixels(bitmap).div(tf.scalar(255))
+  const imageTensor = tf.node.decodeImage(bitmap.data, 3).div(tf.scalar(255))
+
   // Add a batch dimension to the tensor
   const batchedTensor = imageTensor.expandDims(0)
 

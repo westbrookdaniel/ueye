@@ -12,7 +12,7 @@ UEye takes as input an image file of a website and a component map that maps the
 To install UEye, you can use the following command to create a binary for your operating system:
 
 ```bash
-npm run pkg:macos
+yarn pkg:macos
 ```
 
 ## Usage
