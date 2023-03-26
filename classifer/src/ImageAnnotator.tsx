@@ -1,18 +1,5 @@
-import React, { useState } from 'react'
-import { resizeImageFile } from './resizeImageFile'
-
-interface Annotation {
-  fileName: string
-  width: number
-  height: number
-  annotations: {
-    class: string
-    xMin: number
-    yMin: number
-    xMax: number
-    yMax: number
-  }[]
-}
+import React, { useEffect, useState } from 'react'
+import { Annotation } from './App'
 
 const initialAnnotation: Annotation = {
   fileName: '',
@@ -36,7 +23,7 @@ function getPositionOnImage(
 
 interface Props {
   image: File
-  onSubmit: () => void
+  onSubmit: (annotation: Annotation) => void
 }
 
 export default function ImageAnnotator({ image, onSubmit }: Props) {
@@ -44,6 +31,11 @@ export default function ImageAnnotator({ image, onSubmit }: Props) {
     ...initialAnnotation,
     fileName: image.name,
   })
+
+  useEffect(() => {
+    setAnnotation({ ...initialAnnotation, fileName: image.name })
+  }, [image])
+
   const [currentClass, setCurrentClass] = useState<string>('')
   const [isDrawing, setIsDrawing] = useState<boolean>(false)
   const imageRef = React.useRef<HTMLImageElement>(null)
@@ -106,7 +98,7 @@ export default function ImageAnnotator({ image, onSubmit }: Props) {
   const handleSubmit = (event: React.SyntheticEvent) => {
     event.preventDefault()
     console.log(annotation)
-    onSubmit()
+    onSubmit(annotation)
   }
 
   return (
@@ -152,17 +144,6 @@ export default function ImageAnnotator({ image, onSubmit }: Props) {
           />
         </div>
         <div className="form-actions">
-          <button
-            style={{ marginRight: '10px' }}
-            onClick={() => {
-              const a = document.createElement('a')
-              a.href = URL.createObjectURL(image)
-              a.download = image.name
-              a.click()
-            }}
-          >
-            Save Image
-          </button>
           <button onClick={handleSubmit}>Submit</button>
         </div>
 

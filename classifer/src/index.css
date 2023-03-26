@@ -169,3 +169,15 @@ button:active {
 .file-upload input {
   margin-top: 10px;
 }
+
+.setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.setup-container > * + * {
+  margin-top: 20px;
+}

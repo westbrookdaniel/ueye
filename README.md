@@ -7,6 +7,8 @@ UEye is a command-line interface (CLI) tool that uses machine learning to genera
 
 UEye takes as input an image file of a website and a component map that maps the different elements of the website to React components. It outputs a React component hierarchy that can be used to render the website in code.
 
+This repo also contains `classifier`, which is a tool for identifying the different elements of a website in an image. It allows you to input a folder of images and output resized images with annotation data for creating/training a model using the cli.
+
 ## Installation
 
 To install UEye, you can use the following command to create a binary for your operating system:
